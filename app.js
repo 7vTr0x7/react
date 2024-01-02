@@ -1,25 +1,10 @@
-/*
-
-const heading = React.createElement("h1", { id: "heading" }, "hamlo");
-
-console.log(heading); // heading is an React Element
-// react elements are js objects
-// heading is an object
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(heading);
-// render converts heading object into h1 tap and put it in browser
-
-
-*/
-
-// nested elements
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "hamlloooo"),
-    React.createElement("h2", {}, "yooooo"),
+    React.createElement("h1", {}, "hello"),
+    React.createElement("h2", {}, "yoo"),
   ]),
   React.createElement("div", { id: "child2" }, [
     React.createElement("h1", {}, "yoii"),
