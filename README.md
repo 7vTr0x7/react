@@ -53,3 +53,60 @@
 --> https
 --> tree shaking - removes unused code
 --> different dev and production bundles
+
+# creating own script
+
+- package.json
+  --> "scripts": {
+  "start": "parcel index.html",
+  "build": "parcel build index.html"
+  },
+
+# react
+
+--> React.createElement => Object => render => HTMLElement
+
+--> react and jsx are two different things
+
+--> jsx is not html in js
+--> jsx is no html it is html or xml like syntax
+
+# jsx
+
+--> jsx => babel transpile to React.createElement => js Object => render => HTMLElement
+
+# transpiler
+
+--> jsx is transpiled before it reaches browser
+--> transpile - to convert code which browser can understand
+--> babel is transpiler
+
+# react component
+
+=> class based component
+=> functional component
+
+-> react functional component are js functions which return jsx
+
+# component composition
+
+--> using component in side component
+
+```
+const Title = () => (
+
+  <h1 className="title" id="title">
+    Title
+  </h1>
+);
+
+const HeadingComponent = () => (
+
+  <div id="container">
+    <Title />
+    <h1 className="header" id="heading">
+      hello world
+    </h1>
+  </div>
+);
+```
