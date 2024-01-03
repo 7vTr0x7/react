@@ -90,7 +90,7 @@
 
 # component composition
 
---> using component in side component
+--> using component inside component
 
 ```
 const Title = () => (
